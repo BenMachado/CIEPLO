@@ -62,20 +62,3 @@ if (menuToggle && menu) {
   });
 
 }
-
-// =========================
-// NEWSLETTER (front-end apenas — ligar a um backend/serviço depois)
-// =========================
-
-const newsletterForm = document.getElementById("newsletterForm");
-const newsletterFeedback = document.getElementById("newsletterFeedback");
-
-if (newsletterForm && newsletterFeedback) {
-
-  newsletterForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    newsletterForm.reset();
-    newsletterFeedback.hidden = false;
-  });
-
-}

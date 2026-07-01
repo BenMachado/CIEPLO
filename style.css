@@ -394,10 +394,6 @@ SEÇÕES
   transform: none;
 }
 
-.newsletter .section-title::after {
-  background: var(--wine);
-}
-
 .section-subtitle {
   font-size: 14px;
   opacity: 0.6;
@@ -639,67 +635,6 @@ ABOUT
 }
 
 /* ===========================
-NEWSLETTER
-=========================== */
-
-.newsletter {
-  padding: 100px 70px;
-  text-align: center;
-  background: var(--dark);
-  color: var(--bg);
-}
-
-.newsletter .section-title {
-  color: var(--bg);
-}
-
-.newsletter-form {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  max-width: 420px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-.newsletter-form input {
-  flex: 1;
-  min-width: 200px;
-  padding: 13px 16px;
-  border: 1px solid rgba(243, 232, 211, 0.3);
-  border-radius: 10px;
-  background: transparent;
-  color: var(--bg);
-  font-size: 13px;
-}
-
-.newsletter-form input::placeholder {
-  color: rgba(243, 232, 211, 0.5);
-}
-
-.newsletter-form button {
-  padding: 13px 22px;
-  border-radius: 10px;
-  border: 1px solid var(--wine);
-  background: var(--wine);
-  color: white;
-  font-size: 13px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.newsletter-form button:hover {
-  background: var(--wine-dark);
-}
-
-.newsletter-feedback {
-  margin-top: 16px;
-  font-size: 13px;
-  opacity: 0.8;
-}
-
-/* ===========================
 FOOTER
 =========================== */
 
@@ -802,6 +737,7 @@ RESPONSIVO
   }
 
   .menu {
+    display: flex;
     position: absolute;
     top: 100%;
     left: 0;
