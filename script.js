@@ -62,3 +62,56 @@ if (menuToggle && menu) {
   });
 
 }
+
+// =========================
+// PEDIDOS: quantidade por cookie + envio pro WhatsApp
+// =========================
+
+const WHATSAPP_NUMBER = "5547996956773";
+const MAX_QTY = 20;
+
+document.querySelectorAll(".cookie-card").forEach((card) => {
+
+  const qtyValueEl = card.querySelector(".qty-value");
+  const decreaseBtn = card.querySelector('[data-action="decrease"]');
+  const increaseBtn = card.querySelector('[data-action="increase"]');
+  const orderBtn = card.querySelector(".order-btn");
+
+  if (!qtyValueEl || !orderBtn) return;
+
+  let quantity = 1;
+
+  const updateQtyDisplay = () => {
+    qtyValueEl.textContent = quantity;
+  };
+
+  if (decreaseBtn) {
+    decreaseBtn.addEventListener("click", () => {
+      if (quantity > 1) {
+        quantity -= 1;
+        updateQtyDisplay();
+      }
+    });
+  }
+
+  if (increaseBtn) {
+    increaseBtn.addEventListener("click", () => {
+      if (quantity < MAX_QTY) {
+        quantity += 1;
+        updateQtyDisplay();
+      }
+    });
+  }
+
+  orderBtn.addEventListener("click", () => {
+    const name = card.dataset.name || "Cookie";
+    const unitPrice = parseFloat(card.dataset.price) || 0;
+    const total = (unitPrice * quantity).toFixed(2).replace(".", ",");
+
+    const message = `Olá! Gostaria de pedir ${quantity}x ${name} (Total: R$ ${total})`;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank", "noopener");
+  });
+
+});

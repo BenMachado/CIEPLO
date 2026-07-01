@@ -463,7 +463,42 @@ CARD
   color: var(--wine);
 }
 
-.cookie-card button {
+.qty-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 0 18px 12px;
+}
+
+.qty-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--dark);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.qty-btn:hover {
+  background: var(--wine);
+  border-color: var(--wine);
+  color: white;
+}
+
+.qty-value {
+  min-width: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cookie-card .order-btn {
+  display: block;
   width: calc(100% - 36px);
   margin: 0 18px 18px;
   padding: 12px;
@@ -477,7 +512,7 @@ CARD
   letter-spacing: 1px;
 }
 
-.cookie-card button:hover {
+.cookie-card .order-btn:hover {
   background: var(--wine);
 }
 
