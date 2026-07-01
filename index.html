@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CIEPLO Bakery — Cookies Artesanais</title>
+  <meta name="description" content="Cookies artesanais grandes, macios e recheados, feitos diariamente em Itajaí - SC pela CIEPLO Bakery.">
+
+  <!-- Fonte elegante -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,300..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- =========================
+  CABEÇALHO (barra de aviso + navbar, em um único bloco
+  que esconde ao rolar pra baixo e reaparece ao rolar pra cima)
+  ========================== -->
+  <header class="site-header" id="siteHeader">
+
+    <div class="announcement">
+      <p>Recheados de Nutella voltaram por tempo limitado &nbsp;·&nbsp; Retirada em Itajaí - SC</p>
+    </div>
+
+    <div class="navbar">
+
+      <div class="logo">
+        <h1>CIEPLO</h1>
+        <span>Bakery</span>
+      </div>
+
+      <nav class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#cookies">Cookies</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- =========================
+  HERO
+  ========================== -->
+  <section id="home" class="hero">
+
+    <div class="hero-inner">
+
+      <div class="hero-visual">
+
+        <span class="hero-sticker">Recheados de<br>Nutella<br>chegaram!</span>
+
+        <div class="hero-frame">
+          <img src="assets/images/hero.jpg" alt="Cookies CIEPLO empilhados">
+
+          <!-- vapor / aconchego — assinatura visual do CIEPLO -->
+          <svg class="hero-steam" viewBox="0 0 200 240" aria-hidden="true">
+            <path class="steam-line s1" d="M40 230 C 20 190, 60 170, 40 130 C 20 90, 60 70, 45 20" />
+            <path class="steam-line s2" d="M100 230 C 80 185, 120 160, 100 115 C 80 70, 120 55, 105 10" />
+            <path class="steam-line s3" d="M160 230 C 140 190, 180 170, 160 130 C 140 90, 180 70, 165 20" />
+          </svg>
+        </div>
+
+      </div>
+
+      <div class="hero-content">
+
+        <span class="eyebrow">Itajaí — SC</span>
+
+        <h2>Os cookies mais<br>gostosos da região</h2>
+
+        <p>
+          Grandes. Macios. Feitos com ingredientes selecionados.
+          <br>
+          Uma experiência CIEPLO.
+        </p>
+
+        <a href="#cookies" class="btn-primary">
+          Ver Cookies
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+  FAIXA DE CONFIANÇA
+  ========================== -->
+  <section class="trust-strip" aria-label="Diferenciais CIEPLO Bakery">
+
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 7 6 10 6 14a6 6 0 0 0 12 0c0-4-3-7-6-12z"/></svg>
+      <span>Feitos à mão</span>
+    </div>
+
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>
+      <span>Assados todos os dias</span>
+    </div>
+
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v9h14v-9"/></svg>
+      <span>Origem em Itajaí - SC</span>
+    </div>
+
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v12H4zM4 7l8 6 8-6"/></svg>
+      <span>Ingredientes selecionados</span>
+    </div>
+
+  </section>
+
+  <!-- =========================
+  SEÇÃO COOKIES
+  ========================== -->
+  <section id="cookies" class="section">
+
+    <h2 class="section-title">Nosso Cardápio</h2>
+
+    <p class="section-subtitle">
+      Escolha seu cookie favorito
+    </p>
+
+    <div class="grid-cookies">
+
+      <!-- COOKIE 1 -->
+      <div class="cookie-card">
+
+        <div class="cookie-img">
+          <img src="assets/images/original.jpg" alt="Cookie Original">
+        </div>
+
+        <h3>Cookie Original</h3>
+
+        <p>Massa clássica amanteigada com gotas de chocolate.</p>
+
+        <span class="price">R$ 12,00</span>
+
+        <button>Pedir</button>
+
+      </div>
+
+      <!-- COOKIE 2 -->
+      <div class="cookie-card">
+
+        <div class="cookie-img">
+          <img src="assets/images/chocolate.jpg" alt="Cookie de Chocolate">
+        </div>
+
+        <h3>Cookie de Chocolate</h3>
+
+        <p>Massa de chocolate com gotas intensas e macias.</p>
+
+        <span class="price">R$ 13,00</span>
+
+        <button>Pedir</button>
+
+      </div>
+
+      <!-- COOKIE 3 -->
+      <div class="cookie-card">
+
+        <div class="cookie-img">
+          <img src="assets/images/amargo.jpg" alt="Cookie Amargo">
+        </div>
+
+        <h3>Cookie Amargo</h3>
+
+        <p>Feito com cacau intenso e chocolate meio amargo.</p>
+
+        <span class="price">R$ 13,00</span>
+
+        <button>Pedir</button>
+
+      </div>
+
+      <!-- COOKIE 4 -->
+      <div class="cookie-card">
+
+        <div class="cookie-img">
+          <img src="assets/images/branco.jpg" alt="Cookie Branco">
+        </div>
+
+        <h3>Cookie Branco</h3>
+
+        <p>Massa suave com gotas de chocolate branco.</p>
+
+        <span class="price">R$ 13,00</span>
+
+        <button>Pedir</button>
+
+      </div>
+
+      <!-- COOKIE 5 (RECHEADOS) -->
+      <div class="cookie-card highlight">
+
+        <span class="badge">Mais pedido</span>
+
+        <div class="cookie-img">
+          <img src="assets/images/nutella.jpg" alt="Cookie Recheado Nutella">
+        </div>
+
+        <h3>Recheado de Nutella</h3>
+
+        <p>Cookie macio com recheio cremoso de Nutella.</p>
+
+        <span class="price">R$ 15,00</span>
+
+        <button>Pedir</button>
+
+      </div>
+
+      <div class="cookie-card">
+
+        <div class="cookie-img">
+          <img src="assets/images/brigadeiro.jpg" alt="Cookie Brigadeiro">
+        </div>
+
+        <h3>Recheado de Brigadeiro</h3>
+
+        <p>Recheio artesanal de brigadeiro cremoso.</p>
+
+        <span class="price">R$ 15,00</span>
+
+        <button>Pedir</button>
+
+      </div>
+
+      <div class="cookie-card">
+
+        <div class="cookie-img">
+          <img src="assets/images/doce-leite.jpg" alt="Cookie Doce de Leite">
+        </div>
+
+        <h3>Recheado de Doce de Leite</h3>
+
+        <p>Doce de leite cremoso dentro de um cookie quente.</p>
+
+        <span class="price">R$ 15,00</span>
+
+        <button>Pedir</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+  BLOCOS EDITORIAIS
+  ========================== -->
+  <section class="editorial">
+
+    <div class="editorial-block">
+      <div class="editorial-img">
+        <img src="assets/images/editorial-massa.jpg" alt="Massa de cookie sendo preparada">
+      </div>
+      <div class="editorial-text">
+        <span class="eyebrow">Do forno pra sua mesa</span>
+        <h3>Cada cookie é feito à mão, todos os dias</h3>
+        <p>Nada de produção em massa. Preparamos pequenos lotes diariamente, com manteiga de verdade e gotas de chocolate generosas — pra garantir aquele centro macio e quentinho a cada mordida.</p>
+      </div>
+    </div>
+
+    <div class="editorial-block reverse">
+      <div class="editorial-img">
+        <img src="assets/images/editorial-embalagem.jpg" alt="Caixa de cookies CIEPLO embalada para presente">
+      </div>
+      <div class="editorial-text">
+        <span class="eyebrow">Pra presentear ou se presentear</span>
+        <h3>Embalagens pensadas pra chegar com carinho</h3>
+        <p>Seja pra um aniversário, um agradecimento ou só porque sim — montamos caixinhas CIEPLO prontas pra entregar (ou guardar todas pra você mesmo).</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- =========================
+  DEPOIMENTOS
+  ========================== -->
+  <section class="testimonials">
+
+    <h2 class="section-title">Quem provou, repete</h2>
+
+    <div class="testimonial-grid">
+
+      <blockquote>
+        <p>"O recheado de Nutella é simplesmente outro nível. Já é meu pedido fixo de toda semana."</p>
+        <cite>— Marina T., cliente CIEPLO</cite>
+      </blockquote>
+
+      <blockquote>
+        <p>"Cookie grande de verdade, macio por dentro e com aquela borda crocante perfeita."</p>
+        <cite>— Diego A., cliente CIEPLO</cite>
+      </blockquote>
+
+      <blockquote>
+        <p>"Pedi pra um evento da empresa e não sobrou nenhum. Já virou tradição entre a equipe."</p>
+        <cite>— Camila R., cliente CIEPLO</cite>
+      </blockquote>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+  SOBRE
+  ========================== -->
+  <section id="about" class="section about">
+
+    <div class="about-content">
+
+      <div class="about-text">
+        <h2 class="section-title left">Nossa História</h2>
+
+        <p>
+          A CIEPLO nasceu com uma ideia simples: criar cookies artesanais que tragam conforto,
+          sabor e uma experiência única a cada mordida. "Ciepło" significa calor, aconchego —
+          é exatamente isso que a gente quer colocar em cada caixinha que sai do forno.
+        </p>
+      </div>
+
+      <div class="about-img">
+        <img src="assets/images/historia.jpg" alt="Bastidores da produção dos cookies CIEPLO">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+  NEWSLETTER
+  ========================== -->
+  <section class="newsletter">
+
+    <h2 class="section-title">Fique por dentro</h2>
+    <p class="section-subtitle">Novidades de sabores e promoções, direto no seu e-mail.</p>
+
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Seu e-mail" required aria-label="Seu e-mail">
+      <button type="submit">Quero receber</button>
+    </form>
+
+    <p class="newsletter-feedback" id="newsletterFeedback" hidden>Recebido! Em breve novidades CIEPLO no seu e-mail.</p>
+
+  </section>
+
+  <!-- =========================
+  CONTATO
+  ========================== -->
+  <section id="contact" class="section contact">
+
+    <h2 class="section-title">Contato</h2>
+
+    <p>Itajaí - SC e região</p>
+
+    <a href="#" class="btn-primary">WhatsApp</a>
+
+  </section>
+
+  <!-- =========================
+  FOOTER
+  ========================== -->
+  <footer>
+
+    <div class="footer-top">
+
+      <div class="logo">
+        <h1>CIEPLO</h1>
+        <span>Bakery</span>
+      </div>
+
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram CIEPLO Bakery">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp CIEPLO Bakery">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 1 1-3.8-7.1L21 3l-1.2 4A8.46 8.46 0 0 1 21 11.5z"/><path d="M8 9.5c.5 2.5 2.5 4.5 5 5l1-1.2c.3-.3.8-.4 1.1-.1l1.6 1.2c.3.3.3.8 0 1.1-1.6 1.6-4 1.6-6 .2-2-1.4-3.4-3.8-3.6-6.4 0-.4.3-.8.7-.8h1.4c.4 0 .7.3.8.7z"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <p>© 2026 CIEPLO Bakery — Todos os direitos reservados</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
