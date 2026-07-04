@@ -104,11 +104,19 @@ document.querySelectorAll(".cookie-card").forEach((card) => {
   }
 
   orderBtn.addEventListener("click", () => {
-    const name = card.dataset.name || "Cookie";
-    const unitPrice = parseFloat(card.dataset.price) || 0;
+    const baseName = card.dataset.name || "Cookie";
+
+    const selectedFill = card.querySelector('.fill-options input[type="radio"]:checked');
+    const fillLabel = selectedFill ? selectedFill.value : "";
+    const unitPrice = selectedFill ? parseFloat(selectedFill.dataset.price) || 0 : 0;
+
+    const fullName = fillLabel && fillLabel !== "Sem recheio"
+      ? `${baseName} (${fillLabel})`
+      : baseName;
+
     const total = (unitPrice * quantity).toFixed(2).replace(".", ",");
 
-    const message = `Olá! Gostaria de pedir ${quantity}x ${name} (Total: R$ ${total})`;
+    const message = `Olá! Gostaria de pedir ${quantity}x ${fullName} (Total: R$ ${total})`;
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank", "noopener");
